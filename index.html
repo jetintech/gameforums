@@ -9,32 +9,65 @@
 </head>
 <body>
 
-  <header>
+  <header><div class="background-rotator"></div>
+
     <div class="slider" id="slider"></div>
     <div class="header-content">
+ 
       <h1>GameForums</h1>
       <p>Your gateway to the best and upcoming games!</p>
+            <div class="auth-buttons">
+
+  <a href="login.html" class="login-button">Login</a>
+  <a href="login.html" class="signup-button">Sign Up</a>
+</div>
     </div>
   </header>
-
   <nav>
-    <a href="#download">Download Games</a>
+    <a href="#download" class="DOWNLOAD GAMES-button">Download Games</a>
     <a href="#upcoming">Upcoming Releases</a>
+        <a href="#trending Games">Trending Games</a>
+    <a href="#New Release Playstation Games">Playstation Games</a>
+
     <a href="#contact">Contact</a>
+        <marquee style="size: 10px;" behavior="" direction="left"> click to get everything you want all kinds of games, Playstation, xbox Games etc</marquee>
+
   </nav>
+
+<div class="background-rotator"></div>
+<div class="slideshow-container">
+  <img class="slide" src="ng13.webp" style="display:block;">
+  <img class="slide" src="bg6.webp">
+  <img class="slide" src="bg5.jpg">
+  <img class="slide" src="bg4.jpg">
+  <img class="slide" src="bg8.webp">
+</div>
 
   <section id="download">
     <h2>Download Games</h2>
     <div class="game-list">
       <div class="game">
-        <img src="https://via.placeholder.com/300x180.png?text=Game+1" alt="Game 1">
+        <img src="bg7.webp" alt="Game 1">
         <h3>Adventure Quest</h3>
         <p>A thrilling RPG set in a fantasy world.</p>
       </div>
       <div class="game">
-        <img src="https://via.placeholder.com/300x180.png?text=Game+2" alt="Game 2">
+        <img src="gameloft-e3-master-image-1024x576-1.jpg" alt="Game 2">
         <h3>Speed Mania</h3>
         <p>High-speed racing with stunning visuals.</p>
+      </div>
+      <div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div><div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div><div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
       </div>
     </div>
   </section>
@@ -43,20 +76,83 @@
     <h2>Upcoming Games</h2>
     <div class="game-list">
       <div class="game">
-        <img src="https://via.placeholder.com/300x180.png?text=Coming+Soon" alt="Coming Soon">
+        <img src="bg2.webp" alt="Coming Soon">
         <h3>Skyborne</h3>
         <p>A sky-fighting game with multiplayer mode.</p>
       </div>
       <div class="game">
-        <img src="https://via.placeholder.com/300x180.png?text=Coming+Soon" alt="Coming Soon">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div>
+      <div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div>
+      <div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
         <h3>Wasteland Raiders</h3>
         <p>Survive the apocalypse with epic gear and quests.</p>
       </div>
     </div>
   </section>
-
+<Section id="New Release Playstation Games">
+  <h2>New Release Playstation Games</h2>
+      <div class="game-list">
+      <div class="game">
+                <img src="bg2.webp" alt="Coming Soon">
+        <h3>Spiderman 4</h3>
+        <p>A sky-fighting game with multiplayer mode.</p>
+      </div>
+</Section>
+<Section id="trending Games">
+<h2>Trending Games</h2>
+      <div class="game-list">
+      <div class="game">
+                <img src="bg7.webp" alt="Coming Soon">
+        <h3>Metal gear</h3>
+        <p>A sky-fighting game with multiplayer mode.</p>
+      </div>
+      <div class="game">
+                <img src="bg11.avif" alt="Coming Soon">
+        <h3>Warfare</h3>
+        <p>A sky-fighting game with multiplayer mode.</p>
+      </div>
+      <div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div>
+      <div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div>
+      <div class="game">
+        <img src="sddefault.jpg" alt="Coming Soon">
+        <h3>Wasteland Raiders</h3>
+        <p>Survive the apocalypse with epic gear and quests.</p>
+      </div>
+      </div>
+</Section>
   <footer id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="handleSubmit(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="confirmation" class="hidden">Thank you! We'll be in touch soon.</div>
+  </section>
+
     <p>&copy; 2025 GameForums. All rights reserved.</p>
+    The site is design by Jetintech corporation | Incollaboration  with the github organization ,<br>
+    all copyright are reserved, if cuaght action will take place | if any info you want to drop just hit it to thetext area
   </footer>
 
   <script src="script.js"></script>

@@ -2,13 +2,17 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #121212;
+  background-image: url(bg10.webp);
+  background-repeat:no-repeat;
+  background-size: cover;
+  backface-visibility: var(100px);
   color: #fff;
 }
 header {
   position: relative;
   height: 300px;
   overflow: hidden;
+  
 }
 .slider {
   position: absolute;
@@ -16,7 +20,7 @@ header {
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(5px);
+  filter: blur(10px);
   z-index: 0;
   transition: background-image 1s ease-in-out;
 }
@@ -24,23 +28,38 @@ header {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 100px;
+  text-size-adjust: 400px
 }
 .header-content h1 {
-  font-size: 48px;
+  font-size: 60px;
   margin: 0;
 }
 nav {
-  background: #1f1f1f;
+  background-image: url(bg9.webp);
   display: flex;
-  justify-content: center;
-  padding: 10px 0;
+  justify-content: left;
+  padding: 10px 20PX;
+  border-radius: 2PX solid px#04aaff ;
+  text-size-adjust: 400px;
+
 }
 nav a {
-  color: #fff;
-  margin: 0 15px;
+    background-color: transparent;
+  border: 2px solid #04aaff;
+  color: #2db2f0;
+padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+   text-align: left;
+  margin-left: 15px;
+}
+
+nav a:hover{
+  background-color: #04aaff;
+  color: rgb(246, 248, 250);
+  border-radius: 2px #04aaff;
 }
 section {
   padding: 40px 20px;
@@ -50,7 +69,7 @@ section {
 .game-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 50px;
 }
 .game {
   background: #1f1f1f;
@@ -67,4 +86,118 @@ footer {
   padding: 20px;
   background: #1f1f1f;
   margin-top: 40px;
+}
+.background-rotator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px) brightness(0.5);
+  transition: background-image 1s ease-in-out;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.slideshow-container .slide {
+  width: 100%;
+  display: none;
+  border-radius: 12px;
+}
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content:right;
+  
+}
+
+.login-button, .signup-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+   justify-content: right;
+   float: 10%; ;
+}
+
+.login-button {
+  background-color: #04aaff;
+  color: white;
+}
+
+.signup-button {
+  background-color: transparent;
+  border: 2px solid #04aaff;
+  color: #04aaff;
+}
+
+.login-button:hover {
+  background-color: #0280c9;
+}
+
+.signup-button:hover {
+  background-color: #04aaff;
+  color: white;
+  float: inline-end;
+}
+marquee{
+  size: 10px;
+  background-size:2px ;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+}section {
+ padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+form {
+  display: inline-block;
+  flex-direction: column;
+  background-color:transparent;
+}
+
+input, textarea {
+  padding:none ;
+  margin:none ;
+  margin-left: 10px;
+  background-color: rgb(70, 141, 207);
+  border-radius: 40px;
+  size: 10px;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.2em;
+  border: #04aaff;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+button:hover {
+  background-color: #0a5197;
+}
+
+footer {
+   text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+  margin-top: 40px;
+}
+
+.hidden {
+  display: none;
+  margin-top: 1em;
+  color: green;
 }
